@@ -13,7 +13,7 @@ function App() {
     else setResult((prevState) => prevState.concat(e.target.innerHTML));
   };
   const evalResult = () => {
-    setResult(evaluate(result));
+    setResult(evaluate(result).toString());
   };
   return (
     <div>
